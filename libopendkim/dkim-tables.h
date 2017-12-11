@@ -45,7 +45,7 @@ extern struct nametable *mandatory;
 /* prototypes */
 extern const char *dkim_code_to_name __P((struct nametable *tbl,
                                           const int code));
-extern const int dkim_name_to_code __P((struct nametable *tbl,
-                                        const char *name));
+extern int dkim_name_to_code __P((struct nametable *tbl,
+                                  const char *name));
 
 #endif /* _DKIM_TABLES_H_ */

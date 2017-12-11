@@ -232,7 +232,7 @@ dkim_code_to_name(struct nametable *tbl, const int code)
 **  	A mnemonic code matching the provided name, or -1 if not found.
 */
 
-const int
+int
 dkim_name_to_code(struct nametable *tbl, const char *name)
 {
 	int c;
