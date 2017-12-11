@@ -1217,9 +1217,6 @@ dkim_canon_runheaders(DKIM *dkim)
 			else
 				hdrtest = &lib->dkiml_hdrre;
 
-			memset(hdrset, '\0', sizeof *hdrset);
-			nhdrs = 0;
-
 			/* tag headers to be signed */
 			for (hdr = dkim->dkim_hhead;
 			     hdr != NULL;
